@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Maytinh</title>
+    <style>
+
+
+        .button {
+            width: 37px;
+            height: 30px;
+        }
+
+    </style>
+</head>
+<body>
+<table>
+    <tr>
+
+        <input type="text" id='show'/>
+    </tr>
+    <tr>
+        <th>
+            <button type="button" id="1" class="button" onclick="chon('1')">1</button>
+        </th>
+        <th>
+            <button type="button" class="button " onclick="chon ('2')">2</button>
+        </th>
+        <th>
+            <button type="button" class="button" onclick="chon('3')">3</button>
+        </th>
+        <th>
+            <button type="button" class="button" onclick="chon('+')">+</button>
+        </th>
+    </tr>
+    <tr>
+        <th>
+            <button type="button" class="button" onclick="chon('4')">4</button>
+        </th>
+        <th>
+            <button type="button" class="button " onclick="chon ('5')">5</button>
+        </th>
+        <th>
+            <button type="button" class="button" onclick="chon('6')">6</button>
+        </th>
+        <th>
+            <button type="button" class="button" onclick="chon('-')">-</button>
+        </th>
+    </tr>
+    <tr>
+        <th>
+            <button type="button" class="button" onclick="chon('7')">7</button>
+        </th>
+        <th>
+            <button type="button" class="button " onclick="chon ('8')">8</button>
+        </th>
+        <th>
+            <button type="button" class="button" onclick="chon('9')">9</button>
+        </th>
+        <th>
+            <button type="button" class="button" onclick="chon('*')">*</button>
+        </th>
+    </tr>
+    <tr>
+        <th>
+            <button type="button" class="button" onclick="chon('C')">C</button>
+        </th>
+        <th>
+            <button type="button" class="button " onclick="chon ('0')">0</button>
+        </th>
+        <th>
+            <button type="button" class="button" onclick="chon('=')">=</button>
+        </th>
+        <th>
+            <button type="button" class="button" onclick="chon('/')">/</button>
+        </th>
+    </tr>
+
+</table>
+<script>
+    function chon(number) {
+
+
+        switch (number) {
+            case '1':
+                document.getElementById("show").value += "1";
+                break;
+            case '2':
+                document.getElementById("show").value += "2";
+                break;
+            case '3':
+                document.getElementById("show").value += "3";
+                break;
+            case '4':
+                document.getElementById("show").value += "4";
+                break;
+            case '5':
+                document.getElementById("show").value += "5";
+                break;
+            case '6':
+                document.getElementById("show").value += "6";
+                break;
+            case '7':
+                document.getElementById("show").value += "7";
+                break;
+            case '8':
+                document.getElementById("show").value += "8";
+                break;
+            case '9':
+                document.getElementById("show").value += "9";
+                break;
+            case '+':
+                document.getElementById("show").value += "+";
+                break;
+            case '-':
+                document.getElementById("show").value += "-";
+                break;
+            case '*':
+                document.getElementById("show").value += "*";
+                break;
+            case '/':
+                document.getElementById("show").value += "/";
+                break;
+            case '=':
+                document.getElementById("show").value = eval(document.getElementById("show").value);
+                break;
+            case "C":
+                document.getElementById("show").value = "";
+
+
+        }
+    }
+</script>
+
+</body>
+</html>#"SS3_sudungbangtinh")
